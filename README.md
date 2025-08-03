@@ -1,8 +1,21 @@
-# React + Vite
+# Glam & Calm - YILDIZENTEGRE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, elegant website for YILDIZENTEGRE's Glam & Calm surface materials collections.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Interactive Inkwell gallery with product showcases
+- Smooth animations and transitions
+- Responsive design
+- Modern React + Vite setup
+
+## Development
+
+```bash
+npm install
+npm run dev
+```
+
+## Made by
+
+[kalm.works](https://kalm.works)

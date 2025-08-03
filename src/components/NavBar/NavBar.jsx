@@ -124,30 +124,28 @@ const NavBar = () => {
       <div className="navbar-container">
         <div className="logo">
           <a href="#hero">
-            <h3>origin</h3>
-            <span>studio</span>
+            <h3>Glam § Calm</h3>
           </a>
         </div>
 
         <div className="nav-items">
           <div className="langs">
             <p className="current-lang">EN</p>
-            <p>VN</p>
-            <p>ZH</p>
+            <p>TR</p>
           </div>
 
           <div className="nav-links">
-            <a href="#work">
-              <p>Work</p>
+            <a href="#stories">
+              <p>Stories</p>
             </a>
             <a href="#manifesto">
               <p>Manifesto</p>
             </a>
             <a href="#about">
-              <p>Spirit</p>
+              <p>About</p>
             </a>
-            <a href="#team">
-              <p>Team</p>
+            <a href="#collections">
+              <p>Collections</p>
             </a>
             <a href="#contact">
               <p>Contact</p>

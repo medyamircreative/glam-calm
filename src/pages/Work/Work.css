@@ -73,16 +73,44 @@ p.sp-details-name {
   margin-bottom: 2em;
 }
 
-.sp-tags {
-  margin-bottom: 2em;
+.technical-features {
+  margin-bottom: 4em;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 1.5em;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  max-width: 400px;
 }
 
-.sp-tags p {
-  line-height: 1.65;
+.feature-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0.75em 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.feature-row:last-child {
+  border-bottom: none;
+}
+
+.feature-label {
+  font-weight: 500;
+  color: var(--light2);
+  min-width: 140px;
+  margin-right: 1em;
+}
+
+.feature-value {
+  color: var(--light);
+  text-align: right;
+  flex: 1;
+  line-height: 1.4;
 }
 
 .sp-date p {
-  margin-bottom: 4em;
+  margin-top: 3em;
+  margin-bottom: 2em;
   color: var(--light2);
 }
 
@@ -203,6 +231,22 @@ p.sp-details-name {
   height: 100%;
 }
 
+.next-project-img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.next-project-img img {
+  position: relative;
+  z-index: 0;
+}
+
 .next-project .container {
   position: relative;
   padding: 0 1em;
@@ -236,6 +280,25 @@ p.sp-details-name {
   .sp-details .container {
     flex-direction: column-reverse;
     gap: 4em;
+  }
+
+  .technical-features {
+    padding: 1em;
+  }
+
+  .feature-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+  }
+
+  .feature-label {
+    min-width: auto;
+    margin-right: 0;
+  }
+
+  .feature-value {
+    text-align: left;
   }
 
   .sp-info .container {

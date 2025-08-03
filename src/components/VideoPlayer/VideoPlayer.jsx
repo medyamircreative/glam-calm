@@ -70,7 +70,7 @@ const VideoPlayer = () => {
         className="video-player"
         onTimeUpdate={handleTimeUpdate}
         onLoadedMetadata={() => setDuration(videoRef.current.duration)}
-        src="/video/showreel.mov"
+        src="https://www.yildizentegre.com/uploads/videos/1920x1080.mp4?version=11042023151751"
         autoPlay
         loop
         playsInline

@@ -32,28 +32,52 @@ const Work = () => {
 
         <section className="sp-title">
           <div className="container">
-            <h1>Shadow Beacon by Lightforms</h1>
+            <h1>Terra Rosso - GLAM Series</h1>
           </div>
         </section>
 
         <section className="sp-banner">
-          <img src="/work/work1.jpg" alt="" />
+          <img src="/stories/story7.png" alt="" />
         </section>
 
         <section className="sp-details">
           <div className="container">
             <div className="sp-details-col">
-              <p className="sp-details-name">Shadow Beacon</p>
+              <p className="sp-details-name">Terra Rosso</p>
 
-              <div className="sp-tags">
-                <p>Motion Capture</p>
-                <p>Creative Direction</p>
-                <p>3D</p>
-                <p>Post Production</p>
+              <div className="technical-features">
+                <div className="feature-row">
+                  <span className="feature-label">Product Code:</span>
+                  <span className="feature-value">VT_237</span>
+                </div>
+                <div className="feature-row">
+                  <span className="feature-label">Category:</span>
+                  <span className="feature-value">Solid Colors</span>
+                </div>
+                <div className="feature-row">
+                  <span className="feature-label">Surface Appearance:</span>
+                  <span className="feature-value">Register Emboss 3, Natural, Serenity, Hinterland, Bute</span>
+                </div>
+                <div className="feature-row">
+                  <span className="feature-label">Dimensions (mm):</span>
+                  <span className="feature-value">1830×3660 mm, 2100×2800 mm</span>
+                </div>
+                <div className="feature-row">
+                  <span className="feature-label">Thickness (mm):</span>
+                  <span className="feature-value">8 mm, 18 mm, 25 mm</span>
+                </div>
               </div>
+            </div>
+            <div className="sp-details-col">
+              <p>Story</p>
+              <p>
+              The hotel lobby was meant to impress, but its walls felt mute—until the architect discovered Terra Rosso. Inspired by the blush of Tuscan rooftops at sunset, the high-gloss panel arrived at the jobsite wrapped like fine couture.
+One sheet after another slid into place, and the room changed temperature: light danced, conversations rose an octave, and every passenger pulling a suitcase slowed down just to look.
+By nightfall the concierge switched off half the chandeliers; the walls did the shining. Champagne flutes caught the reflection of Terra Rosso's deep red glaze, turning bubbles gold. Influencers stopped by "just for a selfie," and a month later the lobby's Instagram location had its own fan page.
+</p>
 
               <div className="sp-date">
-                <p>February 2021</p>
+                <p>MDF Lam / Front Panel</p>
               </div>
 
               <div className="sp-link">
@@ -62,222 +86,9 @@ const Work = () => {
                     <div className="icon">
                       <IoIosArrowRoundForward size={16} />
                     </div>
-                    View Project
+                    View the Product on yildizentegre.com
                   </button>
                 </Link>
-              </div>
-            </div>
-            <div className="sp-details-col">
-              <p>Challenge</p>
-              <p>
-                Shadow Beacon is a tribute to the interplay between light and
-                form. During a time when the world seemed paused, we set out to
-                create a piece that celebrates movement, space, and emotion.
-                Combining motion capture with imaginative 3D landscapes, the
-                project envisions a dreamlike realm where light becomes a
-                storyteller. Through thoughtful creative direction and intricate
-                post-production, we crafted a narrative that feels both intimate
-                and expansive—a beacon for those searching for connection and
-                inspiration in uncertain times.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section className="showreel">
-          <VideoPlayer />
-        </section>
-
-        <section className="sp-info">
-          <div className="container">
-            <div className="sp-info-title">
-              <h3>Challenge</h3>
-            </div>
-
-            <div className="sp-info-desc">
-              <p>
-                Shadow Beacon explores the idea of finding clarity in moments of
-                obscurity. Inspired by the duality of light and shadow, we
-                imagined a character who navigates a surreal world, guided by
-                beams of light that reveal hidden paths and truths. This
-                character, free from physical constraints, embodies the
-                liberation from everyday burdens, moving fluidly through spaces
-                that are both familiar and otherworldly.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section className="sp-img">
-          <div className="container">
-            <img src="/work/work2.jpg" alt="" />
-          </div>
-        </section>
-
-        <section className="sp-info">
-          <div className="container">
-            <div className="sp-info-title">
-              <h3>Creative Solution</h3>
-            </div>
-
-            <div className="sp-info-desc">
-              <p>
-                To bring Shadow Beacon to life, we focused on creating a
-                seamless blend of reality and surrealism. Escapism became our
-                guiding principle, leading us to juxtapose real-life moments
-                with ethereal 3D landscapes. Shot on the quiet streets of
-                Saigon, our Director of Photography, Ray Lavers, captured
-                fleeting glimpses of reality in just two hours during
-                quarantine. These grounded visuals set the stage for the
-                dreamlike sequences that followed.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section className="sp-img">
-          <div className="container">
-            <img src="/work/work3.jpg" alt="" />
-          </div>
-        </section>
-
-        <section className="credits">
-          <div className="container">
-            <h2>Credits</h2>
-
-            <div className="credits-row">
-              <div className="credits-col">
-                <div className="credits-header">
-                  <p>Project</p>
-                </div>
-                <div className="credits-copy">
-                  <p>Shadow Beacon</p>
-                </div>
-              </div>
-              <div className="credits-col">
-                <div className="credits-header">
-                  <p>Our Role</p>
-                </div>
-                <div className="credits-copy">
-                  <p>
-                    Motion Capture, Creative Direction, 3D Design, Atmospheric
-                    Post-Production
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="divider"></div>
-
-            <div className="credits-row">
-              <div className="credits-col">
-                <div className="credits-header">
-                  <p>Team</p>
-                </div>
-              </div>
-              <div className="credits-col">
-                <div className="credits-header">
-                  <p>Directors</p>
-                </div>
-                <div className="credits-copy">
-                  <p>Lila Morrin (Lightforms), Kai Rivers (Lightforms)</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="credits-row">
-              <div className="credits-col"></div>
-              <div className="credits-col">
-                <div className="credits-header">
-                  <p>Creative Producer</p>
-                </div>
-                <div className="credits-copy">
-                  <p>Eli Dawson</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="credits-row">
-              <div className="credits-col"></div>
-              <div className="credits-col">
-                <div className="credits-header">
-                  <p>Art Direction & Animation</p>
-                </div>
-                <div className="credits-copy">
-                  <p>Lila Morrin (Lightforms)</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="credits-row">
-              <div className="credits-col"></div>
-              <div className="credits-col">
-                <div className="credits-header">
-                  <p>Editing & Compositing</p>
-                </div>
-                <div className="credits-copy">
-                  <p>Kai Rivers (Lightforms)</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="credits-row">
-              <div className="credits-col"></div>
-              <div className="credits-col">
-                <div className="credits-header">
-                  <p>Cinematography & Color Grading</p>
-                </div>
-                <div className="credits-copy">
-                  <p>Rhea Clarke</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="credits-row">
-              <div className="credits-col"></div>
-              <div className="credits-col">
-                <div className="credits-header">
-                  <p>Choreography</p>
-                </div>
-                <div className="credits-copy">
-                  <p>Juno Evers</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="credits-row">
-              <div className="credits-col"></div>
-              <div className="credits-col">
-                <div className="credits-header">
-                  <p>Sound Design</p>
-                </div>
-                <div className="credits-copy">
-                  <p>Echo Chamber Studios</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="credits-row">
-              <div className="credits-col"></div>
-              <div className="credits-col">
-                <div className="credits-header">
-                  <p>Label</p>
-                </div>
-                <div className="credits-copy">
-                  <p>Lightforms Collective</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="credits-row">
-              <div className="credits-col"></div>
-              <div className="credits-col">
-                <div className="credits-header">
-                  <p>Acknowledgments</p>
-                </div>
-                <div className="credits-copy">
-                  <p>Mira Solis, Adrian Wren, & Camille Trest</p>
-                </div>
               </div>
             </div>
           </div>
@@ -285,7 +96,7 @@ const Work = () => {
 
         <section className="next-project">
           <div className="next-project-img">
-            <img src="/projects/project4.jpg" alt="" />
+            <img src="/stories/story1.png" alt="" />
           </div>
 
           <div className="container">
@@ -296,7 +107,8 @@ const Work = () => {
                 </h1>
               </div>
               <div className="next-project-title">
-                <h1>The Machina Chronicles by Narratives Studio</h1>
+                <h1 style={{ marginBottom: '1rem' }}>Need to pair <strong>Terra Rosso</strong></h1>
+                <h3 style={{ fontWeight: '300' }}>Try <strong>Latte Deri</strong> (complementary tone) or mirror its vibrancy with <strong>Kobalt Mavi</strong> for a couture contrast.</h3>
               </div>
             </div>
           </div>

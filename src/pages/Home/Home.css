@@ -11,7 +11,8 @@ section.hero {
   transform: translate(-50%, -50%);
   height: 100%;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
+  pointer-events: none;
 }
 
 .header {
@@ -238,8 +239,9 @@ section.work {
 }
 
 .manifesto-title h1 {
-  font-size: 6.5rem;
+  font-size: 3.5rem;
   line-height: 1.125;
+  margin-bottom: 2rem;
 }
 
 .manifesto-symbol {
@@ -339,27 +341,39 @@ section.work {
 
 .about .container {
   display: flex;
-  gap: 2em;
+  gap: 6em;
+  align-items: flex-start;
 }
 
-.about .container > div {
+.about-main {
+  flex: 2;
+}
+
+.about-main h1 {
+  font-size: 3.8rem;
+  font-weight: 300;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.about-secondary {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+  justify-content: flex-start;
 }
 
-.about-copy p {
-  font-size: 2rem;
+.about-block {
+  width: 100%;
+}
+
+.about-block p {
+  font-size: 1.3rem;
   font-weight: 300;
   line-height: 1.5;
-  text-indent: 2em;
-}
-
-.about-col:nth-child(2) {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.about-col:nth-child(2) {
-  justify-content: flex-end;
+  color: var(--light2);
+  margin: 0;
 }
 
 .gallery {
@@ -384,47 +398,47 @@ section.work {
   will-change: transform;
 }
 
-.team {
+.collections {
   height: max-content;
   overflow: hidden;
 }
 
-.team-intro {
+.collections-intro {
   width: 75%;
 }
 
-.team-intro h1 {
+.collections-intro h1 {
   font-size: 5rem;
   font-weight: 300;
 }
 
-.team-member {
+.collection-item {
   display: flex;
   flex-direction: column;
   margin: 4em 0;
 }
 
-.team-member-position p {
+.collection-category p {
   text-transform: uppercase;
   margin-bottom: 0.75em;
 }
 
-.team-member-index p {
+.collection-index p {
   text-transform: uppercase;
   margin-top: 0.75em;
 }
 
-.team-member-profile {
+.collection-profile {
   display: flex;
   align-items: center;
 }
 
-.team-member-img {
+.collection-img {
   width: 350px;
   height: 500px;
   overflow: hidden;
 }
-.team-member-info {
+.collection-info {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -432,16 +446,16 @@ section.work {
   left: -2em;
   width: calc(100% - 500px);
 }
-.team-member-details {
+.collection-details {
   display: flex;
   gap: 2em;
 }
 
-.team-member-name p {
+.collection-name p {
   font-size: 3rem;
 }
 
-.team-member-toggle {
+.collection-toggle {
   width: 5rem;
   height: 5rem;
   aspect-ratio: 1;
@@ -452,28 +466,28 @@ section.work {
   border-radius: 100%;
 }
 
-.team-member-copy {
+.collection-copy {
   width: 35%;
 }
 
-.team-member-copy p {
+.collection-copy p {
   color: var(--light2);
   line-height: 1.5;
 }
 
-.team-member-index h1 {
+.collection-index h1 {
   display: none;
 }
 
-.team-member {
+.collection-item {
   position: relative;
 }
 
-.tm-2 {
+.collection-2 {
   left: 40%;
 }
 
-.tm-3 {
+.collection-3 {
   left: 15%;
 }
 
@@ -530,6 +544,42 @@ section.work {
   flex: 2;
 }
 
+.footer-col:nth-child(3) {
+  flex: 2;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.footer-logo h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--light2);
+  margin: 0;
+}
+
+.footer-logo p {
+  color: var(--light2);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.yildiz-logo {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.yildiz-logo-img {
+  height: 30px;
+  width: auto;
+  object-fit: contain;
+}
+
 .footer-col-content {
   display: flex;
   gap: 4em;
@@ -581,12 +631,12 @@ section.work {
 }
 
 /* light mode */
-.team,
+.collections,
 .footer {
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-.team-member-toggle {
+.collection-toggle {
   transition: border-color 0.5s ease;
 }
 
@@ -596,12 +646,12 @@ section.work {
   transition: color 0.5s ease;
 }
 
-.team.light {
+.collections.light {
   background-color: #fff;
   color: #000;
 }
 
-.team.light .team-member-toggle {
+.collections.light .collection-toggle {
   border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
@@ -625,6 +675,10 @@ section.work {
     text-align: center;
   }
 
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
   .projects {
     flex-direction: column;
   }
@@ -637,21 +691,8 @@ section.work {
     margin-top: 0;
   }
 
-  .cta {
-    padding: 8em 1em;
-    gap: 4em;
-  }
-
-  .cta-header {
-    width: 90%;
-  }
-
-  .cta-header h2 {
-    font-size: 1.75rem;
-  }
-
   .manifesto-title h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
 
   .process-info {
@@ -668,19 +709,20 @@ section.work {
   }
 
   .marquee-text h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .about .container {
     flex-direction: column;
+    gap: 2em;
   }
 
-  .about .container {
-    gap: 4em;
+  .about-main h1 {
+    font-size: 2.5rem;
   }
 
-  .about-col:nth-child(2) {
-    justify-content: flex-start;
+  .about-block p {
+    font-size: 1rem;
   }
 
   .gallery {
@@ -698,33 +740,33 @@ section.work {
     gap: 1em;
   }
 
-  .team-intro {
+  .collections-intro {
     width: 100%;
   }
 
-  .team-intro h1 {
-    font-size: 3rem;
+  .collections-intro h1 {
+    font-size: 2.5rem;
   }
 
-  .team-member-info {
+  .collection-info {
     display: none;
   }
 
-  .team-member-img {
+  .collection-img {
     width: 100%;
   }
 
-  .team-member-index p {
+  .collection-index p {
     display: none;
   }
 
-  .team-member-index h1 {
+  .collection-index h1 {
     display: block;
     margin-top: 0.5em;
   }
 
-  .tm-2,
-  .tm-3 {
+  .collection-2,
+  .collection-3 {
     left: 0%;
   }
 
@@ -745,4 +787,30 @@ section.work {
   .footer-email h2 {
     font-size: 2rem;
   }
+}
+
+.made-by {
+  text-align: left;
+  padding: 0 0 0.1rem 0;
+  background-color: transparent;
+  border-top: none;
+  margin-left: 0;
+  margin-top: -0.5rem;
+}
+
+.made-by p {
+  color: var(--light2);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.made-by a {
+  color: var(--light2);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 600;
+}
+
+.made-by a:hover {
+  color: var(--light);
 }

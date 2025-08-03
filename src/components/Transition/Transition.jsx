@@ -37,7 +37,7 @@ const Transition = (OriginalComponent, transitionText = "loading") => {
             <img src="/loader/loader-bg.jpg" alt="" />
           </div>
           <p className="transition-text">
-            origin <span>studio</span>
+            Glam § Calm
           </p>
         </motion.div>
 
@@ -52,7 +52,7 @@ const Transition = (OriginalComponent, transitionText = "loading") => {
             <img src="/loader/loader-bg.jpg" alt="" />
           </div>
           <p className="transition-text">
-            origin <span>studio</span>
+            Glam § Calm
           </p>
         </motion.div>
       </>

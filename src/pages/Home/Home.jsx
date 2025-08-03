@@ -2,11 +2,11 @@ import { useEffect, useState, useRef } from "react";
 import "./Home.css";
 import { Link } from "react-router";
 
-import HeroGradient from "../../components/HeroGradient/HeroGradient";
 import VideoPlayer from "../../components/VideoPlayer/VideoPlayer";
 import NavBar from "../../components/NavBar/NavBar";
 import Cursor from "../../components/Cursor/Cursor";
 import Transition from "../../components/Transition/Transition";
+import Inkwell from "../../components/Inkwell/Inkwell";
 
 import { projects } from "./projects";
 
@@ -52,11 +52,11 @@ const Home = () => {
       trigger: ".footer",
       start: "top 80%",
       onEnter: () => {
-        document.querySelector(".team").classList.add("light");
+        document.querySelector(".collections").classList.add("light");
         document.querySelector(".footer").classList.add("light");
       },
       onLeaveBack: () => {
-        document.querySelector(".team").classList.remove("light");
+        document.querySelector(".collections").classList.remove("light");
         document.querySelector(".footer").classList.remove("light");
       },
     });
@@ -222,32 +222,30 @@ const Home = () => {
         <Cursor />
         <NavBar />
         <section className="hero" id="hero">
-          <HeroGradient />
+          <Inkwell />
           <div className="header-container">
             <div className="header h-1">
-              <h1>Made to Move,</h1>
-              <h1>Built to Inspire</h1>
+              <h1>Stories That Leave,</h1>
+              <h1>Mark on Time</h1>
             </div>
             <div className="header h-2">
-              <h1>Ideas Born,</h1>
-              <h1>Boundaries Broken</h1>
+              <h1>Glam & Calm</h1>
             </div>
             <div className="header h-3">
-              <h1>Nơi sáng tạo,</h1>
-              <h1>Không giới hạn</h1>
+              <h1>Stories That Leave,</h1>
+              <h1>Mark on Time</h1>
             </div>
             <div className="header h-4">
-              <h1>Where Vision Meets,</h1>
-              <h1>Limitless Design</h1>
+              <h1>Glam & Calm</h1>
             </div>
           </div>
         </section>
 
-        <section className="work" id="work">
+        <section className="work" id="stories">
           <div className="container">
             <div className="work-header">
               <HiArrowRight size={13} />
-              <p>Selected projects</p>
+              <p>Stories</p>
             </div>
 
             <div className="projects">
@@ -294,25 +292,6 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="cta">
-          <div className="cta-bg-img">
-            <img src="/cta/cta-bg.png" alt="" />
-          </div>
-          <div className="cta-title">
-            <p>Trusted by visionaries</p>
-          </div>
-          <div className="cta-header">
-            <h2>
-              Apple, Netflix, Gucci, Tesla, Uniqlo, Sephora, Google, Moët &
-              Chandon, Spotify, BMW, Montblanc, Panasonic, Nespresso, L’Oréal,
-              Samsung
-            </h2>
-          </div>
-          <div className="cta-btn">
-            <button>Discover more at origin.co</button>
-          </div>
-        </section>
-
         <section className="manifesto" id="manifesto" ref={manifestoRef}>
           <div className="container">
             <div className="manifesto-header">
@@ -321,9 +300,13 @@ const Home = () => {
             </div>
             <div className="manifesto-title">
               <h1>
-                We challenge norms, embrace change, pioneer progress. We are
-                innovators merging art and technology to craft experiences that
-                surprise, delight, and evolve.
+                <strong>We shape emotions in wood.</strong> From the radiant allure of <strong>Glam</strong> to the whisper-quiet poise of <strong>Calm</strong>, each surface is an invitation to feel something real.
+              </h1>
+              <h1>
+                <strong>We honour nature.</strong> Every fibre is sourced responsibly, pressed with clean energy, and engineered to last beyond trends.
+              </h1>
+              <h1>
+                <strong>Create boldly, live softly.</strong> The choice is yours; the craft is ours.
               </h1>
             </div>
           </div>
@@ -334,7 +317,7 @@ const Home = () => {
             <div className="process">
               <div className="process-title">
                 <RiArrowRightDownLine />
-                <p>Integrate</p>
+                <p>CREATE</p>
               </div>
               <div className="process-info">
                 <div className="process-icon">
@@ -344,10 +327,7 @@ const Home = () => {
                 </div>
                 <div className="process-description">
                   <p>
-                    Rooted in creativity, Origin bridges cultures to craft
-                    designs that transcend time and place. We thrive at the
-                    intersection of ideas, uniting diverse perspectives into a
-                    seamless vision.
+                    From concept to creation: 40+ years of expertise, 200+ patterns, endless possibilities.
                   </p>
                 </div>
               </div>
@@ -356,7 +336,7 @@ const Home = () => {
             <div className="process">
               <div className="process-title">
                 <RiArrowRightDownLine />
-                <p>Collaborate</p>
+                <p>DESIGN</p>
               </div>
               <div className="process-info">
                 <div className="process-icon">
@@ -366,9 +346,7 @@ const Home = () => {
                 </div>
                 <div className="process-description">
                   <p>
-                    Creativity is a collective process. At Origin, collaboration
-                    is our foundation—merging ideas, talents, and visions to
-                    create experiences that resonate universally.
+                  Precision from core to coating: High-pressure lamination, 240 m/min lines, zero-defect QC.
                   </p>
                 </div>
               </div>
@@ -377,7 +355,7 @@ const Home = () => {
             <div className="process">
               <div className="process-title">
                 <RiArrowRightDownLine />
-                <p>Challenge</p>
+                <p>SUSTAIN</p>
               </div>
               <div className="process-info">
                 <div className="process-icon">
@@ -387,9 +365,7 @@ const Home = () => {
                 </div>
                 <div className="process-description">
                   <p>
-                    We challenge conventions and redefine possibilities. At
-                    Origin, we dare to push boundaries, delivering solutions
-                    that are as bold as they are impactful.
+                  Beauty with a conscience: FSC® wood, E0 formaldehyde, 98 % recyclable by weight.
                   </p>
                 </div>
               </div>
@@ -399,7 +375,7 @@ const Home = () => {
 
         <div className="marquee">
           <div className="marquee-text">
-            <h1>Explore the essence of Origin Studio</h1>
+            <h1>Stories That Leave, Mark on Time</h1>
           </div>
         </div>
 
@@ -409,24 +385,27 @@ const Home = () => {
 
         <section className="about" id="about">
           <div className="container">
-            <div className="about-col">
-              <div className="about-header">
-                <HiArrowRight size={13} />
-                <p>Origin Spirit</p>
-              </div>
-              <div className="about-copy">
+            <div className="about-main">
+              <h1>
+              We craft surfaces  
+that speak to the senses.  
+Glam turns light into theatre;  
+Calm distils silence into form.  
+Every panel invites people  
+to feel architecture—not
+just see it.
+              </h1>
+            </div>
+            <div className="about-secondary">
+              <div className="about-block">
                 <p>
-                  The Origin Spirit embodies creativity without boundaries.
-                  Whether you’re a lifelong dreamer, a new explorer, or someone
-                  returning to familiar grounds, Origin welcomes those who dare
-                  to imagine. Being part of Origin means embracing inspiration,
-                  collaboration, and limitless potential.
+                Engineered with FSC-certified cores and next-gen lamination lines, our panels unite precision manufacturing with timeless artistry—beauty designed to last.
                 </p>
               </div>
-            </div>
-            <div className="about-col">
-              <div className="cta-btn">
-                <button>Discover more at origin.co</button>
+              <div className="about-block">
+                <p>
+                From bold hotel lobbies to restorative wellness retreats, architects worldwide choose Glam & Calm to set the mood and make every space unforgettable.
+                </p>
               </div>
             </div>
           </div>
@@ -436,178 +415,139 @@ const Home = () => {
           <div className="gallery-wrapper">
             <div className="row">
               <div className="img">
-                <img src="/marquee/img1.jpeg" alt="" />
+                <img src="/marquee/barok_mavi.jpg" alt="" />
               </div>
               <div className="img">
-                <img src="/marquee/img2.jpeg" alt="" />
+                <img src="/marquee/nar_cicegi.jpg" alt="" />
               </div>
               <div className="img">
-                <img src="/marquee/img3.jpeg" alt="" />
+                <img src="/marquee/akik_kizil.jpg" alt="" />
               </div>
               <div className="img">
-                <img src="/marquee/img4.jpeg" alt="" />
-              </div>
-            </div>
-            <div className="row">
-              <div className="img">
-                <img src="/marquee/img5.jpeg" alt="" />
-              </div>
-              <div className="img">
-                <img src="/marquee/img6.jpeg" alt="" />
-              </div>
-              <div className="img">
-                <img src="/marquee/img7.jpeg" alt="" />
-              </div>
-              <div className="img">
-                <img src="/marquee/img8.jpeg" alt="" />
+                <img src="/marquee/R_VT_032.jpg" alt="" />
               </div>
             </div>
             <div className="row">
               <div className="img">
-                <img src="/marquee/img9.jpeg" alt="" />
+                <img src="/marquee/R_SGL_715.jpg" alt="" />
               </div>
               <div className="img">
-                <img src="/marquee/img10.jpeg" alt="" />
+                <img src="/marquee/R_SGL_849.jpg" alt="" />
               </div>
               <div className="img">
-                <img src="/marquee/img11.jpeg" alt="" />
+                <img src="/marquee/R_SGL_98A.jpg" alt="" />
               </div>
               <div className="img">
-                <img src="/marquee/img12.jpeg" alt="" />
+                <img src="/marquee/R_SGL_859.jpg" alt="" />
               </div>
             </div>
             <div className="row">
               <div className="img">
-                <img src="/marquee/img13.jpeg" alt="" />
+                <img src="/marquee/R_SGL_549.jpg" alt="" />
               </div>
               <div className="img">
-                <img src="/marquee/img14.jpeg" alt="" />
+                <img src="/marquee/R_SGL_Z30.jpg" alt="" />
               </div>
               <div className="img">
-                <img src="/marquee/img15.jpeg" alt="" />
+                <img src="/marquee/R_SGL_Z38.jpg" alt="" />
               </div>
               <div className="img">
-                <img src="/marquee/img16.jpeg" alt="" />
+                <img src="/marquee/R_SGL_Z39.jpg" alt="" />
+              </div>
+            </div>
+            <div className="row">
+              <div className="img">
+                <img src="/marquee/pastel_mavi.jpg" alt="" />
+              </div>
+              <div className="img">
+                <img src="/marquee/rubi.jpg" alt="" />
+              </div>
+              <div className="img">
+                <img src="/marquee/nil_yesil.jpg" alt="" />
+              </div>
+              <div className="img">
+                <img src="/marquee/beyaz_mermer.jpg" alt="" />
               </div>
             </div>
           </div>
         </section>
 
-        <section className="team" id="team">
+        <section className="collections" id="collections">
           <div className="container">
-            <div className="team-header">
+            <div className="collections-header">
               <HiArrowRight />
-              <p>Team</p>
+              <p>Collections</p>
             </div>
 
-            <div className="team-intro">
+            <div className="collections-intro">
               <h1>
-                From corners of globe, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; we are
-                united by &nbsp;&nbsp;&nbsp; creativity
+              The choice is yours; &nbsp;&nbsp;&nbsp; the craft is ours.
               </h1>
             </div>
 
-            <div className="team-member tm-1">
-              <div className="team-member-position">
-                <p>Lead Developer</p>
+            <div className="collection-item collection-1">
+              <div className="collection-category">
+                <p>Glam</p>
               </div>
-              <div className="team-member-profile">
-                <div className="team-member-img">
-                  <img src="/team/team-1.jpg" alt="" />
+              <div className="collection-profile">
+                <div className="collection-img">
+                  <img src="/collection/glam.png" alt="" />
                 </div>
-                <div className="team-member-info">
-                  <div className="team-member-name">
+                <div className="collection-info">
+                  <div className="collection-name">
                     <p>
-                      Alex <br />
-                      Johnson
+                    Dare to <br />
+                      Shine
                     </p>
                   </div>
-                  <div className="team-member-details">
-                    <div className="team-member-toggle">
+                  <div className="collection-details">
+                    <div className="collection-toggle">
                       <HiArrowRight size={24} />
                     </div>
-                    <div className="team-member-copy">
+                    <div className="collection-copy">
                       <p>
-                        Alex is a skilled developer with expertise in modern web
-                        technologies and a passion for creating seamless user
-                        experiences.
+                      High-gloss panels that turn any wall into a spotlight: champagne marble, runway reds, and electric cobalt for spaces that insist on dazzling.
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="team-member-index">
+              <div className="collection-index">
                 <p>(01)</p>
-                <h1>Alex Johnson</h1>
+                <h1>Glam Collection</h1>
               </div>
             </div>
 
-            <div className="team-member tm-2">
-              <div className="team-member-position">
-                <p>UI/UX Designer</p>
+            <div className="collection-item collection-2">
+              <div className="collection-category">
+                <p>Calm</p>
               </div>
-              <div className="team-member-profile">
-                <div className="team-member-img">
-                  <img src="/team/team-2.jpg" alt="" />
+              <div className="collection-profile">
+                <div className="collection-img">
+                  <img src="/collection/calm.png" alt="" />
                 </div>
-                <div className="team-member-info">
-                  <div className="team-member-name">
+                <div className="collection-info">
+                  <div className="collection-name">
                     <p>
-                      Sophia <br />
-                      Martinez
+                    Breathe in <br />
+                    Silence
                     </p>
                   </div>
-                  <div className="team-member-details">
-                    <div className="team-member-toggle">
+                  <div className="collection-details">
+                    <div className="collection-toggle">
                       <HiArrowRight size={24} />
                     </div>
-                    <div className="team-member-copy">
+                    <div className="collection-copy">
                       <p>
-                        Sophia specializes in crafting intuitive and visually
-                        appealing designs that bring digital products to life.
+                      Velvet-matte surfaces in leaf-green, travertine beige, and misty oak; they soften light and sound, wrapping rooms in slow-living stillness.
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="team-member-index">
+              <div className="collection-index">
                 <p>(02)</p>
-                <h1>Sophia Martinez</h1>
-              </div>
-            </div>
-
-            <div className="team-member tm-3">
-              <div className="team-member-position">
-                <p>Project Manager</p>
-              </div>
-              <div className="team-member-profile">
-                <div className="team-member-img">
-                  <img src="/team/team-3.jpg" alt="" />
-                </div>
-                <div className="team-member-info">
-                  <div className="team-member-name">
-                    <p>
-                      Michael <br />
-                      Brown
-                    </p>
-                  </div>
-                  <div className="team-member-details">
-                    <div className="team-member-toggle">
-                      <HiArrowRight size={24} />
-                    </div>
-                    <div className="team-member-copy">
-                      <p>
-                        Michael ensures projects are delivered on time and
-                        within scope, maintaining excellent communication with
-                        clients and the team.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="team-member-index">
-                <p>(03)</p>
-                <h1>Michael Brown</h1>
+                <h1>Calm Collection</h1>
               </div>
             </div>
           </div>
@@ -621,12 +561,12 @@ const Home = () => {
             </div>
 
             <div className="footer-title">
-              <h1>Keep in touch</h1>
+              <h1>Get in Touch</h1>
             </div>
 
             <div className="footer-email">
-              <p>We’d love to hear from you</p>
-              <h2>hello@origin.co</h2>
+              <p>Bring Glam & Calm into your next project</p>
+              <h2>info@yildizentegre.com</h2>
             </div>
 
             <div className="footer-content">
@@ -638,23 +578,11 @@ const Home = () => {
                 <div className="footer-col-content">
                   <div className="footer-sub-col">
                     <div className="location">
-                      <h3>New York</h3>
-                      <p>123 Creative Hub,</p>
-                      <p>5th Avenue, Suite 101</p>
-                      <p>New York, NY, 10010</p>
-                      <p>USA</p>
-
-                      <p>
-                        <HiArrowRight /> View on map
-                      </p>
-                    </div>
-
-                    <div className="location">
-                      <h3>Tokyo</h3>
-                      <p>Innovators Tower,</p>
-                      <p>Shibuya City, 8th Floor</p>
-                      <p>Tokyo, 150-0001</p>
-                      <p>Japan</p>
+                      <h3>Studio</h3>
+                      <p>Erenköy Mah. Kadıköy,</p>
+                      <p>Nurettin Ali Berkol Sok. No:3</p>
+                      <p>İstanbul 34744</p>
+                      <p>Türkiye</p>
 
                       <p>
                         <HiArrowRight /> View on map
@@ -663,28 +591,28 @@ const Home = () => {
                   </div>
                   <div className="footer-sub-col">
                     <div className="location">
-                      <h3>London</h3>
-                      <p>Design District,</p>
-                      <p>Greenwich Peninsula</p>
-                      <p>London, SE10 0ER</p>
-                      <p>UK</p>
+                      <h3>Head Office</h3>
+                      <p>Kartepe - Kocaeli,</p>
+                      <p>Arslanbey OSB Mah. 1. Cad</p>
+                      <p>Kocaeli 41285</p>
+                      <p>Türkiye</p>
 
                       <p>
                         <HiArrowRight /> View on map
                       </p>
                     </div>
-
-                    <div className="location">
-                      <h3>Singapore</h3>
-                      <p>Marina Bay Financial Center,</p>
-                      <p>10 Marina Blvd, Tower 2</p>
-                      <p>Singapore, 018983</p>
-                      <p>Singapore</p>
-
-                      <p>
-                        <HiArrowRight /> View on map
-                      </p>
-                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="footer-col">
+                <div className="footer-col-header">
+                  <p>Brand</p>
+                </div>
+                <div className="footer-logo">
+                  <h2>Glam § Calm</h2>
+                  <p>Where elegance meets tranquility</p>
+                  <div className="yildiz-logo">
+                    <img src="/yildiz-logo-placeholder.png" alt="YILDIZENTEGRE Logo" className="yildiz-logo-img" />
                   </div>
                 </div>
               </div>
@@ -696,10 +624,14 @@ const Home = () => {
                   <p>Instagram</p>
                   <p>LinkedIn</p>
                   <p>Twitter</p>
-                  <p>Behance</p>
-                  <p>Dribbble</p>
+                  <p>Youtube</p>
+                  <p>Facebook</p>
                 </div>
               </div>
+            </div>
+
+            <div className="made-by">
+              <p>Made by <a href="https://kalm.works" target="_blank" rel="noopener noreferrer">kalm.works</a></p>
             </div>
           </div>
         </section>
